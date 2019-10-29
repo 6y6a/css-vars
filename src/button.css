@@ -1,0 +1,38 @@
+.btn {
+    --btn-background: #424242;
+    --btn-color: #fff;
+    --btn-border: var(--btn-background);
+
+    display: inline-flex;
+    align-items: center;
+    height: 36px;
+    font-size: 20px;
+    color: var(--btn-color);
+    background: var(--btn-background);
+    border: 1px solid var(--btn-border);
+    border-radius: 4px;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.btn--light {
+    --btn-background: #fff;
+    --btn-color: #424242;
+}
+
+.btn--primary {
+    --btn-background: #DCE775;
+    --btn-color: #424242;
+}
+
+[data-theme='dark'] .btn {
+    --btn-border: #fff;
+}
+
+[data-theme='dark'] .btn--primary {
+    --btn-border: var(--btn-background);
+}
+
+.theme-new .btn {
+    --btn-background: #90CAF9;
+}

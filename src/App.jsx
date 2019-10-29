@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './index.css'
+import Button from "./Button";
 
 class App extends Component {
     handleDarkMode = () => {
@@ -19,8 +20,16 @@ class App extends Component {
 
 
                 <div className="pane">
-                    <button onClick={this.handleDarkMode}>Темная тема</button>
-                    <button onClick={this.handleLightMode}>Светлая тема</button>
+                    <Button onClick={this.handleDarkMode}>Темная тема</Button>
+                    <Button onClick={this.handleLightMode} variant='light'>Светлая тема</Button>
+                </div>
+
+                <div className="pane">
+                    <Button variant='primary'>Просто кнопка</Button>
+                </div>
+
+                <div className="pane theme-new">
+                    <Button variant='primary'>Перестилизованная кнопка</Button>
                 </div>
             </div>
         );
