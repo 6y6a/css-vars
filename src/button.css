@@ -1,5 +1,10 @@
 .btn {
-    --btn-background: #424242;
+    --btn-background-h: 0;
+    --btn-background-s: 0%;
+    --btn-background-l: 26%;
+    --btn-background-triple: var(--btn-background-h), var(--btn-background-s), var(--btn-background-l);
+    --btn-background: hsl(var(--btn-background-triple));
+
     --btn-color: #fff;
     --btn-border: var(--btn-background);
 
@@ -13,16 +18,35 @@
     border-radius: 4px;
     padding: 0 10px;
     margin: 0 5px;
+    transition: all .2s;
 }
 
+.btn:hover {
+    --btn-background-l: 10%;
+ }
+
 .btn--light {
-    --btn-background: #fff;
+    --btn-background-h: 0;
+    --btn-background-s: 0%;
+    --btn-background-l: 100%;
+
     --btn-color: #424242;
+}
+
+.btn--light:hover {
+    --btn-background-l: 80%;
 }
 
 .btn--primary {
-    --btn-background: #DCE775;
+    --btn-background-h: 66;
+    --btn-background-s: 70%;
+    --btn-background-l: 68%;
+
     --btn-color: #424242;
+}
+
+.btn--primary:hover {
+    --btn-background-l: 58%;
 }
 
 [data-theme='dark'] .btn {
