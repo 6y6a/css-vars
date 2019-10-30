@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './index.css'
 import Button from "./Button";
+import Box from "./Box";
 
 class App extends Component {
     handleDarkMode = () => {
@@ -30,6 +31,10 @@ class App extends Component {
 
                 <div className="pane theme-new">
                     <Button variant='primary'>Перестилизованная кнопка</Button>
+                </div>
+
+                <div className="pane theme-new">
+                    <Box />
                 </div>
             </div>
         );

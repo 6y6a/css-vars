@@ -1,0 +1,25 @@
+.Box {
+    /*--color: yellowgreen;*/
+    /*--color: abracadabra;*/
+    /*--blue: blue;*/
+    /*--transition: 0.25s;*/
+
+    width: 400px;
+    height: 400px;
+    background-color: var(--color, orange);
+    /*background-color: var(--color, var(--blue, var(--black, orange)));*/
+
+
+    /*--transition: calc(var(--transition) * 2);*/
+
+    /*transition: calc(var(--transition) * 4);*/
+    /*transition: calc(var(--transition) * 10);*/
+
+    /*--color: 40deg;*/
+    /*--color: var(--color);*/
+    /*background-color: var(--color, orange);*/
+}
+
+.Box:hover {
+    background-color: yellow;
+}
